@@ -13,10 +13,10 @@ function alwaysHungry(arr) {
    }
 
 alwaysHungry([3.14, "food", "pie", true, "food"]);
-// // this should console log "yummy", "yummy"
+// this should console log "yummy", "yummy"
 
 alwaysHungry([4, 1, 5, 7, 2]);
-// // this should console log "I'm hungry"
+// this should console log "I'm hungry"
 
 
 // 2)--- High Pass Filter ---
@@ -46,10 +46,10 @@ function betterThanAverage(arr) {
          count ++;
       }
    }
-//     // calculate the average   
-//     // count how many values are greated than the average
-//     return count;
-// }
+    // calculate the average   
+    // count how many values are greated than the average
+   return count;
+}
 var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 console.log(result); //expect back 4
 
@@ -73,7 +73,7 @@ console.log(result); // we expect back ["e", "d", "c", "b", "a"]
 
 // 5)--- Fibonacci Array ---
 function fibonacciArray(n) {
-    // the [0, 1] are the starting values of the array to calculate the rest from
+   // the [0, 1] are the starting values of the array to calculate the rest from
    var fibArr = [0, 1];
    while (fibArr.length < n) {
       fibArr.push(fibArr[fibArr.length - 2] + fibArr[fibArr.length-1]);
